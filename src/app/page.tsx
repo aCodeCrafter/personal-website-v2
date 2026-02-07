@@ -66,21 +66,8 @@ export default function Portfolio() {
       {/* Projects */}
       <section className="mb-12">
         <h2 className="text-2xl font-bold mb-4">Projects</h2>
-        <div className="space-y-4">
-          <ProjectItem
-            title="Flask Blogging and Administration Engine"
-            github="https://github.com/aCodeCrafter/personal_website"
-          >
-            For this website I wanted a simple portfolio and blog administration
-            engine...
-          </ProjectItem>
-
-          <ProjectItem title="Python Blog Migration Tool">
-            A while back my church wanted to migrate their website from Weebly
-            to Wordpress...
-          </ProjectItem>
-
-          {/* Add your other projects here following the same pattern */}
+        <div className="p-8 border-2 border-dashed border-gray-200 rounded-lg text-center text-gray-500">
+          Projects page under construction, check back soon...
         </div>
       </section>
 
@@ -125,7 +112,7 @@ function ProjectItem({
         className={cn(
           "transition-all duration-300 ease-in-out",
           isOpen
-            ? "max-h-[500px] p-4 opacity-100"
+            ? "max-h-500px p-4 opacity-100"
             : "max-h-0 p-0 opacity-0 overflow-hidden",
         )}
       >
