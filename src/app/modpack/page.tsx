@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, FileArchive, Copy, Check } from "lucide-react";
+import { FileArchive, Copy, Check } from "lucide-react";
 import { getModpackFiles } from "./actions";
-import { cn } from "@/lib/utils";
+import ServerStatus from "@/components/mc-server-status";
 
 export default function DynamicModpackPage() {
   const [files, setFiles] = useState<
@@ -47,6 +47,10 @@ export default function DynamicModpackPage() {
           </button>
         </div>
 
+        {/* Server Status Section */}
+        <div className="mb-6">
+          <ServerStatus ip="acodecrafter.xyz" />
+        </div>
         {/* Dynamic File List */}
         <div className="space-y-3">
           <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest">

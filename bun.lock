@@ -8,6 +8,7 @@
         "clsx": "^2.1.1",
         "framer-motion": "^12.33.0",
         "lucide-react": "^0.563.0",
+        "minecraft-server-util": "^5.4.4",
         "next": "16.1.6",
         "react": "19.2.3",
         "react-dom": "19.2.3",
@@ -657,6 +658,10 @@
     "merge2": ["merge2@1.4.1", "", {}, "sha512-8q7VEgMJW4J8tcfVPy8g09NcQwZdbwFEqhe/WZkoIzjn/3TGDwtOCYtXGxA3O8tPzpczCCDgv+P2P5y00ZJOOg=="],
 
     "micromatch": ["micromatch@4.0.8", "", { "dependencies": { "braces": "^3.0.3", "picomatch": "^2.3.1" } }, "sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA=="],
+
+    "minecraft-motd-util": ["minecraft-motd-util@1.1.12", "", {}, "sha512-5TuTRjrRupSTruea0nRC37r0FdhkS1O4wIJKAYfwJRCQd/X4Zyl/dVIs96h9UVW6N8jhIuz9pNkrDsqyN7VBdA=="],
+
+    "minecraft-server-util": ["minecraft-server-util@5.4.4", "", { "dependencies": { "minecraft-motd-util": "^1.1.9" } }, "sha512-uaE0N9PHPtJudi8BlCvKDD9K30w23ZpeS1I53wEJo9nX0HSmg5qFvwj8gMG0CYCUwWH/g5hjKaGAwXXN/vhMJw=="],
 
     "minimatch": ["minimatch@3.1.2", "", { "dependencies": { "brace-expansion": "^1.1.7" } }, "sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw=="],
 

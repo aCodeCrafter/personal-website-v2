@@ -25,3 +25,21 @@ export async function getModpackFiles() {
         ) + " MB",
     }));
 }
+
+export async function getServerStatus(ip: string) {
+  try {
+    const res = await fetch(`https://api.mcsrvstat.us/3/${ip}`, {
+      next: { revalidate: 60 }, // Cache for 60 seconds
+    });
+    const data = await res.json();
+
+    return {
+      online: data.online,
+      players: data.players?.online || 0,
+      maxPlayers: data.players?.max || 20,
+      version: data.version || "1.20.1",
+    };
+  } catch (error) {
+    return { online: false, players: 0, maxPlayers: 0, version: "" };
+  }
+}
